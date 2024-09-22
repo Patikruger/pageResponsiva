@@ -1,0 +1,118 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #8b4caf; /* Cor de fundo do header */
+    color: #fff; /* Cor do texto */
+    padding: 15px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    font-family: Rubik;
+    font-size: 14px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+
+}
+
+nav ul li a {
+    color: black; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+section img {
+    margin: 20px;
+    width: 500px;
+}
+
+section {
+    display: inline-flex;
+
+}
+
+section p {
+    margin: 20px;
+}
+
+.sobre-loja {
+    padding: 40px 20px;
+    background-color: #f9f9f9; 
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.coluna-javascript img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+
+}
+
+.coluna-react img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.coluna-html img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+.coluna-java img {
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container {
+    display: block;
+}
+
+.container {
+    max-width: 90%;
+}
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .section {
+        grid-template-columns: repeat(2x, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 90%;
+    }
+
+
+}
+
+
