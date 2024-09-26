@@ -105,6 +105,36 @@ section p {
     .section {
         grid-template-columns: repeat(2x, 49%);
     }
+
+    .container {
+        display: block;
+        justify-content: center;
+    }
+    
+    .coluna-javascript img {
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+    
+    }
+    
+    .coluna-react img {
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .coluna-html img {
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .coluna-java img {
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+    }
 }
 
 @media screen and (min-width: 1024px) {
