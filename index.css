@@ -1,4 +1,7 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
+
 * {
     padding: 0;
     margin: 0;
@@ -6,12 +9,14 @@
 }
 
 header {
-    background-color: #8b4caf; /* Cor de fundo do header */
-    color: #fff; /* Cor do texto */
-    padding: 15px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    font-family: Rubik;
-    font-size: 14px;
+    background-color: #0a060c; 
+    color: #fff; 
+    padding: 15px; 
+    text-align: center; 
+    font-family: Amatic SC;
+    font-size: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
 nav ul {
@@ -20,13 +25,13 @@ nav ul {
 }
 
 nav ul li {
-    display: inline; /* Exibe os itens em linha */
+    display:inline; /* Exibe os itens em linha */
     margin: 0 15px; /* Espaçamento entre os itens */
 
 }
 
 nav ul li a {
-    color: black; /* Cor dos links */
+    color: #fff; /* Cor dos links */
     text-decoration: none; /* Remove sublinhado dos links */
 }
 
@@ -34,115 +39,285 @@ nav ul li a:hover {
     text-decoration: underline; /* Sublinha ao passar o mouse */
 }
 
-section img {
-    margin: 20px;
-    width: 500px;
-}
-
-section {
-    display: inline-flex;
-
-}
-
-section p {
-    margin: 20px;
-}
-
-.sobre-loja {
-    padding: 40px 20px;
-    background-color: #f9f9f9; 
-    text-align: center;
-
+.sobre img {
+    width: 50%;
+    padding: 16px;
+    margin-right: 20px;
+    
+   
+  
 }
 
 .container {
+    padding: 16px;
     display: flex;
-    justify-content: center;
+    background-color: #000;
+    width: 100%;
 }
 
-.coluna-javascript img {
-    margin: 5px;
-    width: 200px;
+
+.texto {
+    width: 100px;
+    padding: 20px;
+    margin: 20px;
+
+
+}
+
+.descricao p {
+    font-family: Amatic SC;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 20px;
+    font-family: Amatic SC;
+    color: #fff;
+}
+
+
+.inform button {
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #000 !important;
+    font-family: Amatic SC;
+   width: 300px;
+   height: 100px;
+   font-size: 50px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto;  
+}
+
+.inform button:hover {
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
+
+.inform {
+    background-color: black;
+}
+
+.menu {
+    display: flex;
+    background-color: black;
+    width: 100%;
+  
+}
+
+.linha {
+    border: none;        /* Remove a borda padrão */
+    height: 1px;        /* Define a altura da linha */
+    background-color: #000; /* Cor da linha */
+    margin: 20px 0;
+    width: 100%;     /* Espaçamento acima e abaixo da linha */
+}
+
+
+.menu img {
+    width: 300px;
     height: 200px;
-
+    padding: 3px;
+    margin-top: 5px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
-.coluna-react img {
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-.coluna-html img {
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-.coluna-java img {
-    margin: 5px;
-    width: 200px;
-    height: 200px;
-}
-
-@media screen and (max-width: 640px) {
-
-    .container {
+h2 {
+    text-align: center;
+    color: #f44336;
+    font-size: 15px;
+    width: 100%;
     display: block;
 }
 
-.container {
-    max-width: 90%;
-}
+.images button {
+
+    border: none;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    cursor: pointer;
+    color: #fff !important;
+    background-color: #000 !important;
+    font-family: Amatic SC;
+   width: 200px;
+   height: 50px;
+   font-size: 30px;
+   display: block;
+   margin-right: auto;
+   margin-left: auto; 
+   padding: 2px; 
 
 }
 
-@media screen and (min-width: 641px) and (max-width: 1023px) {
+.images button:hover {
+    color: #fff !important;
+    background-color: #f44336 !important;
+}
+
+@media screen and (max-width: 767px) {
     .container {
-        max-width: 90%;
+        display: block;
+        max-width: 100%;
     }
 
-    .section {
-        grid-template-columns: repeat(2x, 49%);
+    .sobre img {
+        display: block;
+        width: 90%;
+        align-items: center;
     }
+    header {
+        width: 100%;
+    }
+    
+    .texto {
+        width: 100px;
+        padding: 20px;
+        margin: 20px;
+    
+    
+    }
+    
+    .descricao p {
+        font-family: Amatic SC;
+        font-size: 18px;
+        color: #fff;
+        padding: 10px;
+        display: block;
+    }
+    
+    .titulo {
+        text-align: center;
+        font-size: 20px;
+        font-family: Amatic SC;
+        color: #fff;
+    }
+    
+    
+    .menu {
+        display: block;
+        background-color: black;
+        width: 100%;
+        justify-content: center;
+      
+    }
+    
+    .linha {
+        border: none;        /* Remove a borda padrão */
+        height: 1px;        /* Define a altura da linha */
+        background-color: #000; /* Cor da linha */
+        margin: 20px 0;
+        width: 100%;     /* Espaçamento acima e abaixo da linha */
+    }
+    
+    
+    .menu img {
+        width: 300px;
+        height: 200px;
+        padding: 3px;
+        margin-top: 5px;
+        max-width: 100%;
+        display: block;
+        object-fit: cover;
+        padding-left: 20%;
+        
+     
+    }
+    
+    h2 {
+        text-align: center;
+        color: #f44336;
+        font-size: 15px;
+        width: 100%;
+        display: block;
+    }
+
+    .inform {
+        width: 100%;
+        display: block;
+
+}
+
+}
+
+@media screen and (max-width: 1023px) {
 
     .container {
         display: block;
-        justify-content: center;
+        max-width: 100%;
+    }
+
+    .sobre img {
+        display: block;
+        width: 90%;
+        align-items: center;
+    }
+    header {
+        width: 100%;
     }
     
-    .coluna-javascript img {
-        margin: 5px;
-        width: 200px;
-        height: 200px;
+    .texto {
+        width: 100px;
+        padding: 20px;
+        margin: 20px;
+    
     
     }
     
-    .coluna-react img {
-        margin: 5px;
-        width: 200px;
-        height: 200px;
+    .descricao p {
+        font-family: Amatic SC;
+        font-size: 18px;
+        color: #fff;
+        padding: 10px;
+        display: block;
     }
     
-    .coluna-html img {
-        margin: 5px;
-        width: 200px;
-        height: 200px;
+    .titulo {
+        text-align: center;
+        font-size: 20px;
+        font-family: Amatic SC;
+        color: #fff;
     }
     
-    .coluna-java img {
-        margin: 5px;
-        width: 200px;
-        height: 200px;
+    
+    .linha {
+        border: none;       
+        height: 1px;        
+        background-color: #000;
+        margin: 20px 0;
+        width: 100%;     
     }
+    
+    
+    .menu .images img {
+        width: 100%;
+        display: block;
+        padding-right: 15%;
+       
+    }
+    
+    h2 {
+
+        width: 100%;
+        display: block;
+    }
+
+    .inform {
+        width: 100%;
+        display: block;
+
 }
 
-@media screen and (min-width: 1024px) {
-    .container {
-        max-width: 90%;
-    }
-
-
 }
-
 
